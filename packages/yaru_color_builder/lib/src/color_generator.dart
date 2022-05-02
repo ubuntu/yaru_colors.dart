@@ -40,7 +40,7 @@ class YaruColorGenerator extends AnnotatedGenerator<GeneratedYaruColor> {
 
     final primary = color.primary.toHex();
     final shades = color.entries.where((s) => s.key != 0).map((s) {
-      return '${s.key}: ${s.value.toHex()}';
+      return '${s.key}: Color(${s.value.toHex()})';
     }).join(',');
 
     final field = Field((b) => b
