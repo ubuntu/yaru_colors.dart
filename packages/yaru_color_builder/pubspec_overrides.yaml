@@ -1,0 +1,3 @@
+dependency_overrides:
+  yaru_color_generator:
+    path: ../yaru_color_generator

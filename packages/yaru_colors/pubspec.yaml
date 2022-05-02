@@ -1,0 +1,25 @@
+name: yaru_colors
+description: A collection of Yaru color palettes for Flutter.
+homepage: https://github.com/ubuntu/yaru_colors.dart
+repository: https://github.com/ubuntu/yaru_colors.dart
+issue_tracker: https://github.com/ubuntu/yaru_colors.dart/issues
+version: 0.1.0
+publish_to: 'none' # TODO: remove
+
+environment:
+  sdk: '>=2.15.0 <3.0.0'
+
+dependencies:
+  collection: ^1.15.0
+  flutter:
+    sdk: flutter
+  meta: ^1.7.0
+  yaru_color_generator: # TODO: 0.1.0
+    path: ../yaru_color_generator
+
+dev_dependencies:
+  build_runner: ^2.1.10
+  lints: ^1.0.0
+  test: ^1.21.1
+  yaru_color_builder: # TODO: 0.1.0
+    path: ../yaru_color_builder
