@@ -1,16 +1,7 @@
-# yaru_color_builder
+# Yaru Color Builder
 
-A builder extension for `yaru_color_generator` for generating Yaru colors at
-build time.
-
-```yaml
-dependencies:
-  yaru_color_generator:
-
-dev_dependencies:
-  build_runner:
-  yaru_color_builder:
-```
+A builder extension to [yaru_color_generator](https://pub.dev/packages/yaru_color_generator)
+for generating Yaru colors at build time.
 
 ```dart
 // my_colors.dart
@@ -29,3 +20,8 @@ class MyColors {
   static const MaterialColor blue = _$MyColors.blue;
 }
 ```
+
+# Usage
+
+To use this package, add `yaru_color_builder` and `build_runner` as
+[dev_dependency in your pubspec.yaml file](https://docs.flutter.dev/development/packages-and-plugins/using-packages).

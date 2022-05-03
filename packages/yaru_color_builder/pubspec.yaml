@@ -1,12 +1,11 @@
 name: yaru_color_builder
 description: |
-  A builder extension for `yaru_color_generator` for generating Yaru colors at
+  A builder extension to `yaru_color_generator` for generating Yaru colors at
   build time.
 homepage: https://github.com/ubuntu/yaru_colors.dart
 repository: https://github.com/ubuntu/yaru_colors.dart
 issue_tracker: https://github.com/ubuntu/yaru_colors.dart/issues
 version: 0.1.0
-publish_to: 'none' # TODO: remove
 
 environment:
   sdk: '>=2.15.0 <3.0.0'
@@ -16,8 +15,7 @@ dependencies:
   build: ^2.3.0
   code_builder: ^4.1.0
   source_gen: ^1.2.2
-  yaru_color_generator: # TODO: 0.1.0
-    path: ../yaru_color_generator
+  yaru_color_generator: ^0.1.0
 
 dev_dependencies:
   build_test: ^2.1.5

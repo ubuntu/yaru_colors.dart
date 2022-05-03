@@ -1,6 +1,6 @@
 builders:
   yaru_color_builder:
-    import: "package:yaru_color_builder/builder.dart"
+    import: "package:yaru_color_builder/yaru_color_builder.dart"
     builder_factories: ["yaruColorBuilder"]
     build_extensions: {".dart": [".g.dart"]}
     auto_apply: dependents

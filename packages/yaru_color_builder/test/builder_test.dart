@@ -1,7 +1,7 @@
 import 'package:build/build.dart';
 import 'package:build_test/build_test.dart';
 import 'package:test/test.dart';
-import 'package:yaru_color_builder/builder.dart';
+import 'package:yaru_color_builder/yaru_color_builder.dart';
 
 void main() {
   test('builder', () async {
