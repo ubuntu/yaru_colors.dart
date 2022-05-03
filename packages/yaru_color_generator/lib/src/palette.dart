@@ -3,6 +3,7 @@ import 'package:collection/collection.dart';
 /// Color palette described as key-value pairs of shade levels and ARGB color values.
 typedef Palette = Map<int, int>;
 
+/// Palette extensions for color maps.
 extension PaletteX on Palette {
   /// Returns the primary color value.
   int get primary => this[0]!;

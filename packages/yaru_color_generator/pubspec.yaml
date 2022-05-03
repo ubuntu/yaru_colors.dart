@@ -1,6 +1,7 @@
 name: yaru_color_generator
 description: |
-  Generates full Yaru Material color palettes from singular primary color values
+  Generates full Material color palettes for Yaru from singular primary color
+  values
 homepage: https://github.com/ubuntu/yaru_colors.dart
 repository: https://github.com/ubuntu/yaru_colors.dart
 issue_tracker: https://github.com/ubuntu/yaru_colors.dart/issues

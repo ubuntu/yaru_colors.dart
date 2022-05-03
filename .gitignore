@@ -3,7 +3,7 @@
 .packages
 .vscode/
 *.iml
+api/
 build/
 coverage/
-doc/api/
 pubspec.lock
