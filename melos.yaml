@@ -38,3 +38,8 @@ scripts:
   test: >
     melos exec -c 1 --fail-fast --dir-exists=test -- \
       dart test
+
+  # updates goldens in all packages
+  update-goldens: >
+    melos exec -c 1 --fail-fast --dir-exists=integration_test -- \
+      flutter test --update-goldens integration_test
