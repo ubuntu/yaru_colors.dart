@@ -1,5 +1,7 @@
 # Yaru Colors for Flutter
 
+[![pub](https://img.shields.io/pub/v/yaru_colors.svg)](https://pub.dev/packages/yaru_colors)
+
 A collection of Yaru color palettes for Flutter.
 
 ```dart

@@ -1,5 +1,7 @@
 # Yaru Color Generator
 
+[![pub](https://img.shields.io/pub/v/yaru_color_generator.svg)](https://pub.dev/packages/yaru_color_generator)
+
 This package generates full Material color palettes for Yaru from singular
 primary color values using the same algorithm as the official
 [Material color tool](https://material.io/inline-tools/color/).

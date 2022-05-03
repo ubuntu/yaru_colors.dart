@@ -1,5 +1,7 @@
 # Yaru Color Builder
 
+[![pub](https://img.shields.io/pub/v/yaru_color_builder.svg)](https://pub.dev/packages/yaru_color_builder)
+
 A builder extension to [yaru_color_generator](https://pub.dev/packages/yaru_color_generator)
 for generating Yaru colors at build time.
 
