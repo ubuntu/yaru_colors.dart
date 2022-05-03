@@ -21,6 +21,9 @@ class YaruColors {
   @GeneratedYaruColor(0xFFE95622)
   static const MaterialColor orange = _$YaruColors.orange;
 
+  /// Warm Grey
+  ///
+  /// ![](https://raw.githubusercontent.com/ubuntu/yaru_colors.dart/screenshots/packages/yaru_colors/example/doc/images/warmGrey.png)
   @GeneratedYaruColor(0xFFAEA79F)
   static const MaterialColor warmGrey = _$YaruColors.warmGrey;
 

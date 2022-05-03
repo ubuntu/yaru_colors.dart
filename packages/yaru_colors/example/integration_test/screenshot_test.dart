@@ -59,6 +59,24 @@ Future<void> main() async {
       await expectLater(swatch, matchesGoldenFile(await getImagePath(color)));
     }
   });
+
+  testWidgets('neutral', (tester) async {
+    app.main();
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Neutral'));
+    await tester.pumpAndSettle();
+
+    const colors = [
+      'warmGrey',
+    ];
+
+    for (final color in colors) {
+      final swatch = find.byKey(Key('YaruColors.$color'), skipOffstage: false);
+      await tester.ensureVisible(swatch);
+      await tester.pump();
+      await expectLater(swatch, matchesGoldenFile(await getImagePath(color)));
+    }
+  });
 }
 
 // yaru_colors.dart/packages/yaru_colors/doc/images
