@@ -1,0 +1,29 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: sudo snap install flutter --classic
+      - run: flutter config --enable-linux-desktop
+      - run: flutter doctor -v
+      - run: flutter build linux -v
+        working-directory: packages/yaru_colors/example
+
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2
+      - run: sudo snap install flutter --classic
+      - run: flutter doctor -v
+      - run: flutter build web -v
+        working-directory: packages/yaru_colors/example
