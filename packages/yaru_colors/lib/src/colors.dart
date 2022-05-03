@@ -29,9 +29,11 @@ class YaruColors {
 
   static const Color coolGrey = Color(0xFF333333);
   static const Color textGrey = Color(0xFF111111);
-  static const Color red = Color(0xFFff0000);
-  static const Color yellow = Color(0xFFf99b11);
-  static const Color green = Color(0xFF0e8420);
+
+  static const Color error = Color(0xFFff0000);
+  static const Color warning = Color(0xFFf99b11);
+  static const Color success = Color(0xFF0e8420);
+
   static const Color porcelain = Color(0xFFFAFAFA);
   static const Color inkstone = Color(0xFF3B3B3B);
   static const Color jet = Color(0xFF2B2B2B);
@@ -72,11 +74,11 @@ class YaruColors {
   @GeneratedYaruColor(0xFF8856EB)
   static const MaterialColor purple = _$YaruColors.purple;
 
-  /// Light Red
+  /// Red
   ///
-  /// ![](https://raw.githubusercontent.com/ubuntu/yaru_colors.dart/screenshots/packages/yaru_colors/example/doc/images/lightRed.png)
+  /// ![](https://raw.githubusercontent.com/ubuntu/yaru_colors.dart/screenshots/packages/yaru_colors/example/doc/images/red.png)
   @GeneratedYaruColor(0xFFE61D34)
-  static const MaterialColor lightRed = _$YaruColors.lightRed;
+  static const MaterialColor red = _$YaruColors.red;
 
   /// Blue
   ///
