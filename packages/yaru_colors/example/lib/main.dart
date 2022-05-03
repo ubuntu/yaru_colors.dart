@@ -211,8 +211,13 @@ class ColorTile extends StatelessWidget {
         height: tileHeight,
         child: Row(
           children: [
-            SelectableText(isPrimary ? name : '$name[$shade]'),
-            const Spacer(),
+            Expanded(
+              child: Text(
+                isPrimary ? name : '$name[$shade]',
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
+            const SizedBox(width: 8),
             SelectableText(color.toHex()),
           ],
         ),
