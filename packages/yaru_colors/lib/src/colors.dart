@@ -15,7 +15,7 @@ class YaruColors {
     });
   }
 
-  /// Orange
+  /// Ubuntu Orange
   ///
   /// ![](https://raw.githubusercontent.com/ubuntu/yaru_colors.dart/screenshots/packages/yaru_colors/example/doc/images/orange.png)
   @GeneratedYaruColor(0xFFE95622)
@@ -23,19 +23,47 @@ class YaruColors {
 
   /// Warm Grey
   ///
+  /// For balance. The addition of warm grey softens the combination of orange
+  /// and aubergine and provides a bridge between the two.
+  ///
+  /// Warm grey can be used for; backgrounds, graphics, dot patterns, charts and
+  /// diagrams. It can also be used for large size text.
+  ///
   /// ![](https://raw.githubusercontent.com/ubuntu/yaru_colors.dart/screenshots/packages/yaru_colors/example/doc/images/warmGrey.png)
   @GeneratedYaruColor(0xFFAEA79F)
   static const MaterialColor warmGrey = _$YaruColors.warmGrey;
 
+  /// Cool Grey
+  ///
+  /// For typography, particularly body copy. Black can be quite harsh in
+  /// combination with aubergine, but grey delivers more balance while still
+  /// being legible.
+  ///
+  /// Cool grey can also be used within charts and diagrams.
   static const Color coolGrey = Color(0xFF333333);
+
+  /// Text Grey
+  ///
+  /// Text grey is used for small size headings, sub-headings and body copy text
+  /// only.
   static const Color textGrey = Color(0xFF111111);
 
+  /// Error
   static const Color error = Color(0xFFff0000);
+
+  /// Warning
   static const Color warning = Color(0xFFf99b11);
+
+  /// Success
   static const Color success = Color(0xFF0e8420);
 
+  /// Porcelain
   static const Color porcelain = Color(0xFFFAFAFA);
+
+  /// Inkstone
   static const Color inkstone = Color(0xFF3B3B3B);
+
+  /// Jet
   static const Color jet = Color(0xFF2B2B2B);
 
   /// Olive
