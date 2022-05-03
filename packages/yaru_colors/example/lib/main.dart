@@ -8,25 +8,25 @@ const tileHeight = 40.0;
 const tileSpacing = 24.0;
 
 const accentColors = {
-  'orange': YaruColors.orange,
-  'bark': YaruColors.bark,
-  'sage': YaruColors.sage,
-  'olive': YaruColors.olive,
-  'viridian': YaruColors.viridian,
-  'prussianGreen': YaruColors.prussianGreen,
-  'blue': YaruColors.blue,
-  'purple': YaruColors.purple,
-  'magenta': YaruColors.magenta,
-  'lightRed': YaruColors.lightRed,
+  'YaruColors.orange': YaruColors.orange,
+  'YaruColors.bark': YaruColors.bark,
+  'YaruColors.sage': YaruColors.sage,
+  'YaruColors.olive': YaruColors.olive,
+  'YaruColors.viridian': YaruColors.viridian,
+  'YaruColors.prussianGreen': YaruColors.prussianGreen,
+  'YaruColors.blue': YaruColors.blue,
+  'YaruColors.purple': YaruColors.purple,
+  'YaruColors.magenta': YaruColors.magenta,
+  'YaruColors.lightRed': YaruColors.lightRed,
 };
 
 const flavorColors = {
-  'kubuntuBlue': YaruColors.kubuntuBlue,
-  'lubuntuBlue': YaruColors.lubuntuBlue,
-  'ubuntuBudgieBlue': YaruColors.ubuntuBudgieBlue,
-  'ubuntuMateGreen': YaruColors.ubuntuMateGreen,
-  'ubuntuStudioBlue': YaruColors.ubuntuStudioBlue,
-  'xubuntuBlue': YaruColors.xubuntuBlue,
+  'YaruColors.kubuntuBlue': YaruColors.kubuntuBlue,
+  'YaruColors.lubuntuBlue': YaruColors.lubuntuBlue,
+  'YaruColors.ubuntuBudgieBlue': YaruColors.ubuntuBudgieBlue,
+  'YaruColors.ubuntuMateGreen': YaruColors.ubuntuMateGreen,
+  'YaruColors.ubuntuStudioBlue': YaruColors.ubuntuStudioBlue,
+  'YaruColors.xubuntuBlue': YaruColors.xubuntuBlue,
 };
 
 const shades = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900];
@@ -207,7 +207,7 @@ class ColorTile extends StatelessWidget {
         height: tileHeight,
         child: Row(
           children: [
-            SelectableText('YaruColors.$name[$shade]'),
+            SelectableText('$name[$shade]'),
             const Spacer(),
             SelectableText(color.toHex()),
           ],
