@@ -173,8 +173,9 @@ class ColorSwatch extends StatelessWidget {
       children: shades.map((shade) {
         return ColorTile(
           name: name,
-          color: color[shade]!,
           shade: shade,
+          color: color[shade]!,
+          isPrimary: color.value == color[shade]!.value,
         );
       }).toList(),
     );
@@ -185,13 +186,15 @@ class ColorTile extends StatelessWidget {
   const ColorTile({
     Key? key,
     required this.name,
-    required this.color,
     required this.shade,
+    required this.color,
+    required this.isPrimary,
   }) : super(key: key);
 
   final String name;
-  final Color color;
   final int shade;
+  final Color color;
+  final bool isPrimary;
 
   @override
   Widget build(BuildContext context) {
@@ -200,6 +203,7 @@ class ColorTile extends StatelessWidget {
         fontFamily: 'Ubuntu Mono',
         fontSize: Theme.of(context).textTheme.caption!.fontSize,
         color: color.isDark ? YaruColors.porcelain : YaruColors.textGrey,
+        fontWeight: isPrimary ? FontWeight.bold : FontWeight.normal,
       ),
       child: Container(
         padding: const EdgeInsets.all(8),
@@ -207,7 +211,7 @@ class ColorTile extends StatelessWidget {
         height: tileHeight,
         child: Row(
           children: [
-            SelectableText('$name[$shade]'),
+            SelectableText(isPrimary ? name : '$name[$shade]'),
             const Spacer(),
             SelectableText(color.toHex()),
           ],

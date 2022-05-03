@@ -30,7 +30,7 @@ Future<void> main() async {
     ];
 
     for (final color in colors) {
-      final swatch = find.byKey(Key(color), skipOffstage: false);
+      final swatch = find.byKey(Key('YaruColors.$color'), skipOffstage: false);
       await tester.ensureVisible(swatch);
       await tester.pump();
       await expectLater(swatch, matchesGoldenFile(await getImagePath(color)));
@@ -53,7 +53,7 @@ Future<void> main() async {
     ];
 
     for (final color in colors) {
-      final swatch = find.byKey(Key(color), skipOffstage: false);
+      final swatch = find.byKey(Key('YaruColors.$color'), skipOffstage: false);
       await tester.ensureVisible(swatch);
       await tester.pump();
       await expectLater(swatch, matchesGoldenFile(await getImagePath(color)));
