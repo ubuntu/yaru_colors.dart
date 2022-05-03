@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:yaru/yaru.dart' hide YaruColors; // TODO
 import 'package:yaru_colors/yaru_colors.dart';
 
-const tileWidth = 320.0;
+const tileWidth = 360.0;
 const tileHeight = 40.0;
 const tileSpacing = 24.0;
 
@@ -17,7 +17,7 @@ const accentColors = {
   'blue': YaruColors.blue,
   'purple': YaruColors.purple,
   'magenta': YaruColors.magenta,
-  'red': YaruColors.lightRed,
+  'lightRed': YaruColors.lightRed,
 };
 
 const flavorColors = {
@@ -92,6 +92,7 @@ class ColorView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView(
+      primary: false, // https://github.com/flutter/flutter/issues/93862
       padding: const EdgeInsets.all(tileSpacing),
       gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
         maxCrossAxisExtent: tileWidth,
@@ -167,6 +168,7 @@ class ColorSwatch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      key: Key(name),
       mainAxisSize: MainAxisSize.min,
       children: shades.map((shade) {
         return ColorTile(
@@ -205,7 +207,7 @@ class ColorTile extends StatelessWidget {
         height: tileHeight,
         child: Row(
           children: [
-            SelectableText('$name[$shade]'),
+            SelectableText('YaruColors.$name[$shade]'),
             const Spacer(),
             SelectableText(color.toHex()),
           ],
