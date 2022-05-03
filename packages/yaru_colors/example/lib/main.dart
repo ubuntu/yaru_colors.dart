@@ -29,6 +29,10 @@ const flavorColors = {
   'YaruColors.xubuntuBlue': YaruColors.xubuntuBlue,
 };
 
+const neutralColors = {
+  'YaruColors.warmGrey': YaruColors.warmGrey,
+};
+
 const shades = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900];
 
 void main() {
@@ -57,6 +61,7 @@ class _MyAppState extends State<MyApp> {
             children: const [
               ColorView(colors: accentColors),
               ColorView(colors: flavorColors),
+              ColorView(colors: neutralColors),
               ColorSelector(),
             ],
           ),
@@ -69,6 +74,10 @@ class _MyAppState extends State<MyApp> {
               BottomNavigationBarItem(
                 icon: Icon(Icons.star),
                 label: 'Flavor',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.sentiment_neutral),
+                label: 'Neutral',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.colorize),
