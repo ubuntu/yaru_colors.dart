@@ -24,7 +24,7 @@ Future<void> main() async {
       'prussianGreen',
       'viridian',
       'purple',
-      'lightRed',
+      'red',
       'blue',
       'magenta',
     ];

@@ -111,7 +111,7 @@ class _$YaruColors {
     900: Color(0xFF2213C2)
   });
 
-  static const MaterialColor lightRed = MaterialColor(0xFFE61D34, {
+  static const MaterialColor red = MaterialColor(0xFFE61D34, {
     50: Color(0xFFFFEAEE),
     100: Color(0xFFFFCAD2),
     200: Color(0xFFEF9499),

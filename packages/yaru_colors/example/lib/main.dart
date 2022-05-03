@@ -17,7 +17,7 @@ const accentColors = {
   'YaruColors.blue': YaruColors.blue,
   'YaruColors.purple': YaruColors.purple,
   'YaruColors.magenta': YaruColors.magenta,
-  'YaruColors.lightRed': YaruColors.lightRed,
+  'YaruColors.red': YaruColors.red,
 };
 
 const flavorColors = {
