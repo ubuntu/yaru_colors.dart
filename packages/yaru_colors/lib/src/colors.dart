@@ -3,8 +3,17 @@ import 'package:yaru_color_generator/yaru_color_generator.dart';
 
 part 'colors.g.dart';
 
+/// Available Yaru color palettes.
 class YaruColors {
   YaruColors._();
+
+  /// Generates a Yaru color palette from the specicied [primary] color value.
+  static MaterialColor generate(int primary) {
+    final color = generateYaruColor(primary);
+    return MaterialColor(color.primary, {
+      for (final shade in color.shades) shade: Color(color[shade]!),
+    });
+  }
 
   @GeneratedYaruColor(0xFFE95622)
   static const MaterialColor orange = _$YaruColors.orange;
