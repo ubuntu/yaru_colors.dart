@@ -9,13 +9,11 @@ on:
 
 jobs:
   build-runner:
-    if: ${{ false }} # disabled until the packages have been published
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: subosito/flutter-action@v2
       - uses: bluefireteam/melos-action@v1
-      - run: melos bootstrap
       - run: melos generate
       - run: ./.github/scripts/check-outdated-files.sh
         if: github.event_name != 'push'
