@@ -1,6 +1,6 @@
 import 'package:flex_color_picker/flex_color_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:yaru/yaru.dart' hide YaruColors; // TODO
+import 'package:yaru/yaru.dart';
 import 'package:yaru_colors/yaru_colors.dart';
 
 const tileWidth = 360.0;
