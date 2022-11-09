@@ -47,6 +47,7 @@ Future<void> main() async {
       'kubuntuBlue',
       'lubuntuBlue',
       'ubuntuBudgieBlue',
+      'ubuntuButterflyPink',
       'ubuntuMateGreen',
       'ubuntuStudioBlue',
       'xubuntuBlue',
