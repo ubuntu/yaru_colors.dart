@@ -189,6 +189,19 @@ class _$YaruColors {
     900: Color(0xFF0D47A1)
   });
 
+  static const MaterialColor ubuntuButterflyPink = MaterialColor(0xFFFF135B, {
+    50: Color(0xFFFFE5EB),
+    100: Color(0xFFFFBCCE),
+    200: Color(0xFFFF90AE),
+    300: Color(0xFFFF628D),
+    400: Color(0xFFFF3D74),
+    500: Color(0xFFFF135B),
+    600: Color(0xFFEE0B59),
+    700: Color(0xFFD80256),
+    800: Color(0xFFC40053),
+    900: Color(0xFFA0004F)
+  });
+
   static const MaterialColor ubuntuMateGreen = MaterialColor(0xFF73AF59, {
     50: Color(0xFFEFF8EB),
     100: Color(0xFFD8ECCE),
