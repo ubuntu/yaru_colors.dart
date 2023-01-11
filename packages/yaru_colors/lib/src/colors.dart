@@ -67,10 +67,10 @@ class YaruColors {
   static const Color jet = Color(0xFF2B2B2B);
 
   /// Light title bar
-  static const titleBarLight = Color(0xFFEBEBEB);
+  static const Color titleBarLight = Color(0xFFEBEBEB);
 
   /// Dark title bar
-  static const titleBarDark = Color(0xFF303030);
+  static const Color titleBarDark = Color(0xFF303030);
 
   /// Olive
   ///
