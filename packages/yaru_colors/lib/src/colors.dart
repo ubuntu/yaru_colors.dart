@@ -66,6 +66,12 @@ class YaruColors {
   /// Jet
   static const Color jet = Color(0xFF2B2B2B);
 
+  /// Light title bar
+  static const Color titleBarLight = Color(0xFFEBEBEB);
+
+  /// Dark title bar
+  static const Color titleBarDark = Color(0xFF303030);
+
   /// Olive
   ///
   /// ![](https://raw.githubusercontent.com/ubuntu/yaru_colors.dart/screenshots/packages/yaru_colors/example/doc/images/olive.png)
