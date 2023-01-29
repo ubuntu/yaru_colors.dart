@@ -211,7 +211,7 @@ class ColorTile extends StatelessWidget {
     return DefaultTextStyle(
       style: TextStyle(
         fontFamily: 'Ubuntu Mono',
-        fontSize: Theme.of(context).textTheme.caption!.fontSize,
+        fontSize: Theme.of(context).textTheme.bodySmall!.fontSize,
         color: color.isDark ? YaruColors.porcelain : YaruColors.textGrey,
         fontWeight: isPrimary ? FontWeight.bold : FontWeight.normal,
       ),
