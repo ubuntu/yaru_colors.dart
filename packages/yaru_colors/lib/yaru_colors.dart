@@ -2,3 +2,4 @@
 library yaru_colors;
 
 export 'src/colors.dart';
+export 'src/extensions/color_extension.dart';
