@@ -1,6 +1,6 @@
 name: yaru_colors_example
 description: Yaru Colors example app
-publish_to: 'none'
+publish_to: "none"
 
 environment:
   sdk: ">=2.15.0 <3.0.0"
@@ -24,3 +24,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+dependency_overrides:
+  yaru_colors:
+    path: ../

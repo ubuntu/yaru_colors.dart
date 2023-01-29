@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test/test.dart';
+import 'package:flutter_test/flutter_test.dart';
 import 'package:yaru_colors/src/extensions/color_extension.dart';
 
 final Matcher throwsAssertionError = throwsA(isA<AssertionError>());

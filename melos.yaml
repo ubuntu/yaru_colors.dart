@@ -42,8 +42,10 @@ scripts:
   test: >
     melos exec -c 1 --fail-fast --dir-exists=test -- \
       dart test
+    melos exec -c 1 --fail-fast --dir-exists=integration_test -- \
+      flutter test integration_test -d linux
 
   # updates goldens in all packages
   update-goldens: >
-    melos exec -c 1 --fail-fast --dir-exists=integration_test -- \
-      flutter test --update-goldens integration_test
+    melos exec -c 1 --fail-fast --dir-exists=golden_test -- \
+      flutter test --update-goldens golden_test
