@@ -38,7 +38,8 @@ extension YaruColorExtension on Color {
   }
 
   /// Adjust color attributes by the given values.
-  /// [alpha], [hue], [saturation] and [lightness] values must be clamped between -1.0 and 1.0
+  /// [alpha], [saturation] and [lightness] values must be clamped between -1.0 and 1.0
+  /// [hue] value must be clamped between -360.0 and 360.0
   Color adjust({
     double alpha = 0.0,
     double hue = 0.0,
@@ -65,7 +66,8 @@ extension YaruColorExtension on Color {
   }
 
   /// Return a copy of this color with attributes replaced by given values.
-  /// [alpha], [hue], [saturation] and [lightness] values must be clamped between -1.0 and 1.0
+  /// [alpha], [saturation] and [lightness] values must be clamped between 0.0 and 1.0
+  /// [hue] value must be clamped between 0.0 and 360.0
   Color copyWith({
     double? alpha,
     double? hue,
