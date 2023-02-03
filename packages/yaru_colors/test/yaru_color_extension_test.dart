@@ -3,90 +3,198 @@ import 'package:test/test.dart';
 import 'package:yaru_colors/src/yaru_color_extension.dart';
 
 final Matcher throwsAssertionError = throwsA(isA<AssertionError>());
+final Color midColor = const HSLColor.fromAHSL(.5, 180, .5, .5).toColor();
 
 void main() {
-  group('Color.darken() test -', () {
+  group('Color.scale() test -', () {
     test('With out of range amount', () {
-      expect(() => const Color(0xffffffff).darken(-0.1), throwsAssertionError);
-      expect(() => const Color(0xffffffff).darken(1.1), throwsAssertionError);
+      expect(() => midColor.scale(alpha: -1.1), throwsAssertionError);
+      expect(() => midColor.scale(alpha: 1.1), throwsAssertionError);
+      expect(() => midColor.scale(hue: -1.1), throwsAssertionError);
+      expect(() => midColor.scale(hue: 1.1), throwsAssertionError);
+      expect(() => midColor.scale(saturation: -1.1), throwsAssertionError);
+      expect(() => midColor.scale(saturation: 1.1), throwsAssertionError);
+      expect(() => midColor.scale(lightness: -1.1), throwsAssertionError);
+      expect(() => midColor.scale(lightness: 1.1), throwsAssertionError);
     });
     test('With clamped amount', () {
       expect(
-        const Color(0xff808080).darken(1.0),
-        const Color(0xff000000),
+        midColor.scale(alpha: -1.0),
+        const Color(0x0040bfbf),
+      );
+      expect(
+        midColor.scale(alpha: 1.0),
+        const Color(0xff40bfbf),
+      );
+      expect(
+        midColor.scale(hue: -1.0),
+        const Color(0x80bf4040),
+      );
+      expect(
+        midColor.scale(hue: 1.0),
+        const Color(0x80bf4040),
+      );
+      expect(
+        midColor.scale(saturation: -1.0),
+        const Color(0x80808080),
+      );
+      expect(
+        midColor.scale(saturation: 1.0),
+        const Color(0x8000ffff),
+      );
+      expect(
+        midColor.scale(lightness: -1.0),
+        const Color(0x80000000),
+      );
+      expect(
+        midColor.scale(lightness: 1.0),
+        const Color(0x80ffffff),
       );
     });
-    test('With medium amount (orange)', () {
+    test('With medium amount', () {
       expect(
-        const Color(0xffe95622).darken(0.5),
-        const Color(0xff79290c),
+        midColor.scale(alpha: -0.5),
+        const Color(0x4040bfbf),
       );
-    });
-    test('With medium amount (desaturated)', () {
       expect(
-        const Color(0xffffffff).darken(0.5),
-        const Color(0xff808080),
+        midColor.scale(alpha: 0.5),
+        const Color(0xc040bfbf),
+      );
+      expect(
+        midColor.scale(hue: -0.5),
+        const Color(0x8080bf40),
+      );
+      expect(
+        midColor.scale(hue: 0.5),
+        const Color(0x808040bf),
+      );
+      expect(
+        midColor.scale(saturation: -0.5),
+        const Color(0x80609f9f),
+      );
+      expect(
+        midColor.scale(saturation: 0.5),
+        const Color(0x8020dfdf),
+      );
+      expect(
+        midColor.scale(lightness: -0.5),
+        const Color(0x80206060),
+      );
+      expect(
+        midColor.scale(lightness: 0.5),
+        const Color(0x80a0dfdf),
       );
     });
   });
-  group('- Color.lighten() test -', () {
+
+  group('Color.adjust() test -', () {
     test('With out of range amount', () {
-      expect(() => const Color(0xff000000).lighten(-0.1), throwsAssertionError);
-      expect(() => const Color(0xff000000).lighten(1.1), throwsAssertionError);
+      expect(() => midColor.adjust(alpha: -1.1), throwsAssertionError);
+      expect(() => midColor.adjust(alpha: 1.1), throwsAssertionError);
+      expect(() => midColor.adjust(hue: -360.1), throwsAssertionError);
+      expect(() => midColor.adjust(hue: 360.1), throwsAssertionError);
+      expect(() => midColor.adjust(saturation: -1.1), throwsAssertionError);
+      expect(() => midColor.adjust(saturation: 1.1), throwsAssertionError);
+      expect(() => midColor.adjust(lightness: -1.1), throwsAssertionError);
+      expect(() => midColor.adjust(lightness: 1.1), throwsAssertionError);
     });
     test('With clamped amount', () {
       expect(
-        const Color(0xff808080).lighten(1.0),
-        const Color(0xffffffff),
+        midColor.adjust(alpha: -1.0),
+        const Color(0x0040bfbf),
+      );
+      expect(
+        midColor.adjust(alpha: 1.0),
+        const Color(0xff40bfbf),
+      );
+      expect(
+        midColor.adjust(hue: -180),
+        const Color(0x80bf4040),
+      );
+      expect(
+        midColor.adjust(hue: 180),
+        const Color(0x80bf4040),
+      );
+      expect(
+        midColor.adjust(saturation: -1.0),
+        const Color(0x80808080),
+      );
+      expect(
+        midColor.adjust(saturation: 1.0),
+        const Color(0x8000ffff),
+      );
+      expect(
+        midColor.adjust(lightness: -1.0),
+        const Color(0x80000000),
+      );
+      expect(
+        midColor.adjust(lightness: 1.0),
+        const Color(0x80ffffff),
       );
     });
-    test('With medium amount (orange)', () {
+    test('With medium amount', () {
       expect(
-        const Color(0xffe95622).lighten(0.5),
-        const Color(0xfff4ab90),
+        midColor.adjust(alpha: -0.25),
+        const Color(0x4040bfbf),
       );
-    });
-    test('With medium amount (desaturated)', () {
       expect(
-        const Color(0xff000000).lighten(0.5),
-        const Color(0xff808080),
+        midColor.adjust(alpha: 0.25),
+        const Color(0xc040bfbf),
+      );
+      expect(
+        midColor.adjust(hue: -90),
+        const Color(0x8080bf40),
+      );
+      expect(
+        midColor.adjust(hue: 90),
+        const Color(0x808040bf),
+      );
+      expect(
+        midColor.adjust(saturation: -0.25),
+        const Color(0x80609f9f),
+      );
+      expect(
+        midColor.adjust(saturation: 0.25),
+        const Color(0x8020dfdf),
+      );
+      expect(
+        midColor.adjust(lightness: -0.25),
+        const Color(0x80206060),
+      );
+      expect(
+        midColor.adjust(lightness: 0.25),
+        const Color(0x80a0dfdf),
       );
     });
   });
-  group('Color.appendLightness() test -', () {
+
+  group('Color.copyWith() test -', () {
     test('With out of range amount', () {
-      expect(() => const Color(0xffffffff).appendLightness(-1.1),
-          throwsAssertionError);
-      expect(() => const Color(0xffffffff).darken(1.1), throwsAssertionError);
+      expect(() => midColor.copyWith(alpha: -1.1), throwsAssertionError);
+      expect(() => midColor.copyWith(alpha: 1.1), throwsAssertionError);
+      expect(() => midColor.copyWith(hue: -360.1), throwsAssertionError);
+      expect(() => midColor.copyWith(hue: 360.1), throwsAssertionError);
+      expect(() => midColor.copyWith(saturation: -1.1), throwsAssertionError);
+      expect(() => midColor.copyWith(saturation: 1.1), throwsAssertionError);
+      expect(() => midColor.copyWith(lightness: -1.1), throwsAssertionError);
+      expect(() => midColor.copyWith(lightness: 1.1), throwsAssertionError);
     });
-    test('With clamped amount', () {
+    test('With various amount', () {
       expect(
-        const Color(0xff808080).appendLightness(1.0),
-        const Color(0xffffffff),
+        midColor.copyWith(alpha: 0.25),
+        const Color(0x4040bfbf),
       );
       expect(
-        const Color(0xff808080).appendLightness(-1.0),
-        const Color(0xff000000),
-      );
-    });
-    test('With medium amount (orange)', () {
-      expect(
-        const Color(0xffe95622).appendLightness(0.5),
-        const Color(0xffffffff),
+        midColor.copyWith(hue: 90),
+        const Color(0x8080bf40),
       );
       expect(
-        const Color(0xffe95622).appendLightness(-0.5),
-        const Color(0xff0b0401),
-      );
-    });
-    test('With medium amount (desaturated)', () {
-      expect(
-        const Color(0xff000000).appendLightness(0.5),
-        const Color(0xff808080),
+        midColor.copyWith(saturation: 0.75),
+        const Color(0x8020dfdf),
       );
       expect(
-        const Color(0xffffffff).appendLightness(-0.5),
-        const Color(0xff808080),
+        midColor.copyWith(lightness: 0.75),
+        const Color(0x80a0dfdf),
       );
     });
   });
