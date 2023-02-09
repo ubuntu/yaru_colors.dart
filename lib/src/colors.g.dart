@@ -202,6 +202,19 @@ class _$YaruColors {
     900: Color(0xFFA0004F)
   });
 
+  static const MaterialColor ubuntuCinnamonBrown = MaterialColor(0xFFDD682A, {
+    50: Color(0xFFFEF4E4),
+    100: Color(0xFFFDE4BB),
+    200: Color(0xFFFDD290),
+    300: Color(0xFFFCC065),
+    400: Color(0xFFFCB349),
+    500: Color(0xFFFBA63A),
+    600: Color(0xFFF69B36),
+    700: Color(0xFFF08C32),
+    800: Color(0xFFE87E2E),
+    900: Color(0xFFDD682A)
+  });
+
   static const MaterialColor ubuntuMateGreen = MaterialColor(0xFF73AF59, {
     50: Color(0xFFEFF8EB),
     100: Color(0xFFD8ECCE),
