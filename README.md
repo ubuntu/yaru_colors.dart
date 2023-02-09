@@ -1,7 +1,7 @@
 # Yaru Colors for Flutter
 
 [![pub](https://img.shields.io/pub/v/yaru_colors.svg)](https://pub.dev/packages/yaru_colors)
-[![CI](https://github.com/ubuntu/yaru_colors.dart/workflows/Tests/badge.svg)](https://github.com/ubuntu/yaru_colors.dart/actions/workflows/tests.yaml)
+[![CI](https://github.com/ubuntu/yaru_colors.dart/actions/workflows/ci.yaml/badge.svg)](https://github.com/ubuntu/yaru_colors.dart/actions/workflows/ci.yaml)
 [![codecov](https://codecov.io/gh/ubuntu/yaru_colors.dart/branch/main/graph/badge.svg?token=xuGIiNAANl)](https://codecov.io/gh/ubuntu/yaru_colors.dart)
 
 A collection of Yaru color palettes for Flutter.
