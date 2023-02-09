@@ -151,6 +151,13 @@ class YaruColors {
   static const MaterialColor ubuntuButterflyPink =
       _$YaruColors.ubuntuButterflyPink;
 
+  /// Ubuntu Cinnamon Brown
+  ///
+  /// ![](https://raw.githubusercontent.com/ubuntu/yaru_colors.dart/main/doc/images/ubuntuCinnamonBrown.png)
+  @GeneratedYaruColor(0xFFDD682A)
+  static const MaterialColor ubuntuCinnamonBrown =
+      _$YaruColors.ubuntuCinnamonBrown;
+
   /// Ubuntu MATE Green
   ///
   /// ![](https://raw.githubusercontent.com/ubuntu/yaru_colors.dart/main/doc/images/ubuntuMateGreen.png)
