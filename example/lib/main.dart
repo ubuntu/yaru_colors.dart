@@ -1,6 +1,5 @@
 import 'package:flex_color_picker/flex_color_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:yaru/yaru.dart';
 import 'package:yaru_colors/yaru_colors.dart';
 
 const tileWidth = 360.0;
@@ -53,10 +52,11 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData.light(useMaterial3: true),
+      darkTheme: ThemeData.dark(useMaterial3: true),
       debugShowCheckedModeBanner: false,
-      home: YaruTheme(
-        child: Scaffold(
-          appBar: AppBar(title: const Text('Yaru Colors')),
+      home: Builder(builder: (context) {
+        return Scaffold(
           body: IndexedStack(
             index: _currentPage,
             children: const [
@@ -66,30 +66,31 @@ class _MyAppState extends State<MyApp> {
               ColorSelector(),
             ],
           ),
-          bottomNavigationBar: BottomNavigationBar(
-            items: const [
-              BottomNavigationBarItem(
+          bottomNavigationBar: NavigationBar(
+            destinations: const [
+              NavigationDestination(
                 icon: Icon(Icons.color_lens),
                 label: 'Accent',
               ),
-              BottomNavigationBarItem(
+              NavigationDestination(
                 icon: Icon(Icons.star),
                 label: 'Flavor',
               ),
-              BottomNavigationBarItem(
+              NavigationDestination(
                 icon: Icon(Icons.sentiment_neutral),
                 label: 'Neutral',
               ),
-              BottomNavigationBarItem(
+              NavigationDestination(
                 icon: Icon(Icons.colorize),
                 label: 'Custom',
               )
             ],
-            currentIndex: _currentPage,
-            onTap: (index) => setState(() => _currentPage = index),
+            selectedIndex: _currentPage,
+            onDestinationSelected: (index) =>
+                setState(() => _currentPage = index),
           ),
-        ),
-      ),
+        );
+      }),
     );
   }
 }
