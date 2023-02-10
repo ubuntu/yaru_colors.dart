@@ -27,6 +27,7 @@ const flavorColors = {
   'YaruColors.ubuntuCinnamonBrown': YaruColors.ubuntuCinnamonBrown,
   'YaruColors.ubuntuMateGreen': YaruColors.ubuntuMateGreen,
   'YaruColors.ubuntuStudioBlue': YaruColors.ubuntuStudioBlue,
+  'YaruColors.ubuntuUnityPurple': YaruColors.ubuntuUnityPurple,
   'YaruColors.xubuntuBlue': YaruColors.xubuntuBlue,
 };
 
