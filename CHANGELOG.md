@@ -1,3 +1,14 @@
+## 0.1.4
+
+* CI: replace 18.04 with 22.04 by @jpnurmi in https://github.com/ubuntu/yaru_colors.dart/pull/15
+* Restructure: promote `yaru_colors` to the root by @jpnurmi in https://github.com/ubuntu/yaru_colors.dart/pull/16
+* Docs: fix screenshot links by @jpnurmi in https://github.com/ubuntu/yaru_colors.dart/pull/17
+* CI: merge workflows by @jpnurmi in https://github.com/ubuntu/yaru_colors.dart/pull/18
+* Example: get rid of the backwards yaru.dart dependency by @jpnurmi in https://github.com/ubuntu/yaru_colors.dart/pull/20
+* Add YaruColors.ubuntuCinnamonBrown by @jpnurmi in https://github.com/ubuntu/yaru_colors.dart/pull/19
+* Add Unity purple by @jpnurmi in https://github.com/ubuntu/yaru_colors.dart/pull/21
+* Import generated butterfly pink by @jpnurmi in https://github.com/ubuntu/yaru_colors.dart/pull/22
+
 ## 0.1.3
 
 - Fix Flutter 3.1 deprecated member use, by @Jupi007 in ([#11](https://github.com/ubuntu/yaru_colors.dart/pull/11))
