@@ -241,6 +241,19 @@ class _$YaruColors {
     900: Color(0xFF004BA8)
   });
 
+  static const MaterialColor ubuntuUnityPurple = MaterialColor(0xFF9005D5, {
+    50: Color(0xFFF4E5FA),
+    100: Color(0xFFE3BEF4),
+    200: Color(0xFFD291EE),
+    300: Color(0xFFBF63E7),
+    400: Color(0xFFB03CE2),
+    500: Color(0xFFA100DB),
+    600: Color(0xFF9005D5),
+    700: Color(0xFF7807CE),
+    800: Color(0xFF6107C8),
+    900: Color(0xFF2308C0)
+  });
+
   static const MaterialColor xubuntuBlue = MaterialColor(0xFF0044AA, {
     50: Color(0xFFE2F2FE),
     100: Color(0xFFBADEFE),

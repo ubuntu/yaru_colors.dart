@@ -170,6 +170,12 @@ class YaruColors {
   @GeneratedYaruColor(0xFF009BF9)
   static const MaterialColor ubuntuStudioBlue = _$YaruColors.ubuntuStudioBlue;
 
+  /// Ubuntu Unity Purple
+  ///
+  /// ![](https://raw.githubusercontent.com/ubuntu/yaru_colors.dart/main/doc/images/ubuntuUnityPurple.png)
+  @GeneratedYaruColor(0xFF9005D5)
+  static const MaterialColor ubuntuUnityPurple = _$YaruColors.ubuntuUnityPurple;
+
   /// Xubuntu Blue
   ///
   /// ![](https://raw.githubusercontent.com/ubuntu/yaru_colors.dart/main/doc/images/xubuntuBlue.png)
