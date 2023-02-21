@@ -1,3 +1,7 @@
+## 0.1.5
+
+* Darken jet by @Feichtmeier in https://github.com/ubuntu/yaru_colors.dart/pull/24
+
 ## 0.1.4
 
 * CI: replace 18.04 with 22.04 by @jpnurmi in https://github.com/ubuntu/yaru_colors.dart/pull/15
