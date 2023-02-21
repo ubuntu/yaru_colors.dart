@@ -3,7 +3,7 @@ description: A collection of Yaru color palettes for Flutter.
 homepage: https://github.com/ubuntu/yaru_colors.dart
 repository: https://github.com/ubuntu/yaru_colors.dart
 issue_tracker: https://github.com/ubuntu/yaru_colors.dart/issues
-version: 0.1.5
+version: 0.1.6
 
 environment:
   sdk: ">=2.15.0 <3.0.0"

@@ -1,3 +1,7 @@
+## 0.1.6
+
+*  Revert jet color change for now by @Feichtmeier in https://github.com/ubuntu/yaru_colors.dart/pull/24
+
 ## 0.1.5
 
 * Darken jet by @Feichtmeier in https://github.com/ubuntu/yaru_colors.dart/pull/24
