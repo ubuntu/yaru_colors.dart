@@ -18,7 +18,7 @@ class YaruColors {
   /// Ubuntu Orange
   ///
   /// ![](https://raw.githubusercontent.com/ubuntu/yaru_colors.dart/main/doc/images/orange.png)
-  @GeneratedYaruColor(0xFFE95622)
+  @GeneratedYaruColor(0xFFE95420)
   static const MaterialColor orange = _$YaruColors.orange;
 
   /// Warm Grey
@@ -105,13 +105,13 @@ class YaruColors {
   /// Purple
   ///
   /// ![](https://raw.githubusercontent.com/ubuntu/yaru_colors.dart/main/doc/images/purple.png)
-  @GeneratedYaruColor(0xFF8856EB)
+  @GeneratedYaruColor(0xFF7764D8)
   static const MaterialColor purple = _$YaruColors.purple;
 
   /// Red
   ///
   /// ![](https://raw.githubusercontent.com/ubuntu/yaru_colors.dart/main/doc/images/red.png)
-  @GeneratedYaruColor(0xFFE61D34)
+  @GeneratedYaruColor(0xFFDA3450)
   static const MaterialColor red = _$YaruColors.red;
 
   /// Blue
@@ -123,7 +123,7 @@ class YaruColors {
   /// Magenta
   ///
   /// ![](https://raw.githubusercontent.com/ubuntu/yaru_colors.dart/main/doc/images/magenta.png)
-  @GeneratedYaruColor(0xFFBC33DB)
+  @GeneratedYaruColor(0xFFB34CB3)
   static const MaterialColor magenta = _$YaruColors.magenta;
 
   /// Kubuntu Blue

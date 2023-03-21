@@ -7,17 +7,17 @@ part of 'colors.dart';
 // **************************************************************************
 
 class _$YaruColors {
-  static const MaterialColor orange = MaterialColor(0xFFE95622, {
+  static const MaterialColor orange = MaterialColor(0xFFE95420, {
     50: Color(0xFFF9E9E7),
     100: Color(0xFFFBCCBC),
-    200: Color(0xFFF9AB92),
-    300: Color(0xFFF68B67),
-    400: Color(0xFFF57345),
-    500: Color(0xFFF45C26),
-    600: Color(0xFFE95622),
-    700: Color(0xFFDB4F1E),
-    800: Color(0xFFCD491A),
-    900: Color(0xFFB43D14)
+    200: Color(0xFFF9AB91),
+    300: Color(0xFFF68A65),
+    400: Color(0xFFF57144),
+    500: Color(0xFFF45A24),
+    600: Color(0xFFE95420),
+    700: Color(0xFFDB4D1B),
+    800: Color(0xFFCD4718),
+    900: Color(0xFFB43B11)
   });
 
   static const MaterialColor warmGrey = MaterialColor(0xFFAEA79F, {
@@ -98,30 +98,30 @@ class _$YaruColors {
     900: Color(0xFF046744)
   });
 
-  static const MaterialColor purple = MaterialColor(0xFF8856EB, {
-    50: Color(0xFFF0E8FC),
-    100: Color(0xFFD7C6F7),
-    200: Color(0xFFBB9FF3),
-    300: Color(0xFF9F76EF),
-    400: Color(0xFF8856EB),
-    500: Color(0xFF6F35E6),
-    600: Color(0xFF6430DF),
-    700: Color(0xFF5327D7),
-    800: Color(0xFF4220D0),
-    900: Color(0xFF2213C2)
+  static const MaterialColor purple = MaterialColor(0xFF7764D8, {
+    50: Color(0xFFEDE9F9),
+    100: Color(0xFFD0C9F1),
+    200: Color(0xFFB1A5E8),
+    300: Color(0xFF9180DF),
+    400: Color(0xFF7764D8),
+    500: Color(0xFF5C4AD0),
+    600: Color(0xFF5145CA),
+    700: Color(0xFF403DC0),
+    800: Color(0xFF3037B8),
+    900: Color(0xFF092CAA)
   });
 
-  static const MaterialColor red = MaterialColor(0xFFE61D34, {
-    50: Color(0xFFFFEAEE),
-    100: Color(0xFFFFCAD2),
-    200: Color(0xFFEF9499),
-    300: Color(0xFFE56A72),
-    400: Color(0xFFF0434F),
-    500: Color(0xFFF52A35),
-    600: Color(0xFFE61D34),
-    700: Color(0xFFD40D2E),
-    800: Color(0xFFC70027),
-    900: Color(0xFFB9001A)
+  static const MaterialColor red = MaterialColor(0xFFDA3450, {
+    50: Color(0xFFFBE4E9),
+    100: Color(0xFFF6BBC8),
+    200: Color(0xFFEF90A4),
+    300: Color(0xFFE86581),
+    400: Color(0xFFE14967),
+    500: Color(0xFFDA3450),
+    600: Color(0xFFCA2F4E),
+    700: Color(0xFFB52A4A),
+    800: Color(0xFFA12547),
+    900: Color(0xFF7D1D40)
   });
 
   static const MaterialColor blue = MaterialColor(0xFF0073E5, {
@@ -137,17 +137,17 @@ class _$YaruColors {
     900: Color(0xFF0F41B4)
   });
 
-  static const MaterialColor magenta = MaterialColor(0xFFBC33DB, {
-    50: Color(0xFFF6E5FA),
-    100: Color(0xFFE8BDF2),
-    200: Color(0xFFD98FEA),
-    300: Color(0xFFC95FE2),
-    400: Color(0xFFBC33DB),
-    500: Color(0xFFAF00D4),
-    600: Color(0xFF9E00CE),
-    700: Color(0xFF8700C8),
-    800: Color(0xFF7200C2),
-    900: Color(0xFF4600B6)
+  static const MaterialColor magenta = MaterialColor(0xFFB34CB3, {
+    50: Color(0xFFF4E6F4),
+    100: Color(0xFFE4C0E4),
+    200: Color(0xFFD396D3),
+    300: Color(0xFFC16CC1),
+    400: Color(0xFFB34CB3),
+    500: Color(0xFFA52FA6),
+    600: Color(0xFF972BA0),
+    700: Color(0xFF852598),
+    800: Color(0xFF752090),
+    900: Color(0xFF591782)
   });
 
   static const MaterialColor kubuntuBlue = MaterialColor(0xFF0079C1, {
