@@ -1,3 +1,8 @@
+## 0.1.7
+
+* CI: pin Melos at 2.9.0 by @jpnurmi in https://github.com/ubuntu/yaru_colors.dart/pull/29
+* Sync accent colors with ubuntu/yaru by @jpnurmi in https://github.com/ubuntu/yaru_colors.dart/pull/28
+
 ## 0.1.6
 
 *  Revert jet color change for now by @Feichtmeier in https://github.com/ubuntu/yaru_colors.dart/pull/24
